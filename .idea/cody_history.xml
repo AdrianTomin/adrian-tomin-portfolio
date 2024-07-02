@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChatHistory">
+    <accountData>
+      <list>
+        <AccountData>
+          <accountId value="VXNlcjozNjEyMzc=" />
+          <chats>
+            <list>
+              <chat>
+                <internalId value="89f73297-e07d-4031-a1ec-8ddd112ea355" />
+              </chat>
+              <chat>
+                <internalId value="5463a379-659b-4421-8ae4-9f809f9d6c78" />
+                <messages>
+                  <list>
+                    <message>
+                      <speaker value="HUMAN" />
+                      <text value="I keep getting this error in my project when i try to deploy on vercel:&#10;Failed to load module script: Expected a JavaScript module script but the server responded with a MIME type of &quot;video/mp2t&quot;. Strict MIME type checking is enforced for module scripts per HTML spec." />
+                    </message>
+                    <message>
+                      <speaker value="ASSISTANT" />
+                      <text value="&lt;html&gt;&lt;b&gt; Cody encountered an error when processing your message:&lt;/b&gt;&lt;br&gt;&lt;div marginwidth=10&quot; marginheight=&quot;10&quot;&gt;&amp;#9888;  org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request chat/new failed with message: No chat model found in server-provided config&lt;/div&gt;&lt;div&gt;If the problem persists, please &lt;a href=&quot;https://github.com/sourcegraph/jetbrains/issues/new?template=bug_report.yml&amp;labels=bug,team/jetbrains&amp;projects=sourcegraph/381&amp;title=bug%3A+java.util.concurrent.ExecutionException%3A+org.eclipse.lsp4j.jsonrpc.ResponseErrorException%3A+Request+chat%2Fnew+failed+with+messa...&amp;version=IDE+version%3A+%60%60%60WS-232.9921.42%60%60%60&amp;logs=Stacktrace%3A%0A%60%60%60text%0Ajava.util.concurrent.ExecutionException%3A+org.eclipse.lsp4j.jsonrpc.ResponseErrorException%3A+Request+chat%2Fnew+failed+with+message%3A+No+chat+model+found+in+server-provided+config%0A%09at+java.base%2Fjava.util.concurrent.CompletableFuture.reportGet%28CompletableFuture.java%3A396%29%0A%09at+java.base%2Fjava.util.concurrent.CompletableFuture.get%28CompletableFuture.java%3A2073%29%0A%09at+com.sourcegraph.cody.chat.AgentChatSession.submitMessageToAgent%24lambda%241%28AgentChatSession.kt%3A109%29%0A%09at+com.sourcegraph.cody.agent.CodyAgentService%24Companion%24withAgent%242%241%24task%241.invokeSuspend%28CodyAgentService.kt%3A185%29%0A%09at+com.sourcegraph.cody.agent.CodyAgentService%24Companion%24withAgent%242%241%24task%241.invoke%28CodyAgentService.kt%29%0A%09at+com.sourcegraph.cody.agent.CodyAgentService%24Companion%24withAgent%242%241%24task%241.invoke%28CodyAgentService.kt%29%0A%09at+com.sourcegraph.cody.agent.CodyAgentService%24Companion.coWithAgent%28CodyAgentService.kt%3A241%29%0A%09at+com.sourcegraph.cody.agent.CodyAgentService%24Companion%24withAgent%242%241.invokeSuspend%28CodyAgentService.kt%3A190%29%0A%09at+kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith%28ContinuationImpl.kt%3A33%29%0A%09at+kotlinx.coroutines.DispatchedTask.run%28DispatchedTask.kt%3A106%29%0A%09at+kotlinx.coroutines.EventLoopImplBase.processNextEvent%28EventLoop.common.kt%3A280%29%0A%09at+kotlinx.coroutines.BlockingCoroutine.joinBlocking%28Builders.kt%3A85%29%0A%09at+kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking%28Builders.kt%3A59%29%0A%09at+kotlinx.coroutines.BuildersKt.runBlocking%28Unknown+Source%29%0A%09at+kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking%24default%28Builders.kt%3A38%29%0A%09at+kotlinx.coroutines.BuildersKt.runBlocking%24default%28Unknown+Source%29%0A%09at+com.sourcegraph.cody.agent.CodyAgentService%24Companion.withAgent%24lambda%242%28CodyAgentService.kt%3A182%29%0A%09at+com.intellij.openapi.application.impl.ApplicationImpl%242.run%28ApplicationImpl.java%3A272%29%0A%09at+java.base%2Fjava.util.concurrent.Executors%24RunnableAdapter.call%28Executors.java%3A539%29%0A%09at+java.base%2Fjava.util.concurrent.FutureTask.run%28FutureTask.java%3A264%29%0A%09at+java.base%2Fjava.util.concurrent.ThreadPoolExecutor.runWorker%28ThreadPoolExecutor.java%3A1136%29%0A%09at+java.base%2Fjava.util.concurrent.ThreadPoolExecutor%24Worker.run%28ThreadPoolExecutor.java%3A635%29%0A%09at+java.base%2Fjava.util.concurrent.Executors%24PrivilegedThreadFactory%241%241.run%28Executors.java%3A702%29%0A%09at+java.base%2Fjava.util.concurrent.Executors%24PrivilegedThreadFactory%241%241.run%28Executors.java%3A699%29%0A%09at+java.base%2Fjava.security.AccessController.doPrivileged%28AccessController.java%3A399%29%0A%09at+java.base%2Fjava.util.concurrent.Executors%24PrivilegedThreadFactory%241.run%28Executors.java%3A699%29%0A%09at+java.base%2Fjava.lang.Thread.run%28Thread.java%3A833%29%0ACaused+by%3A+org.eclipse.lsp4j.jsonrpc.ResponseErrorException%3A+Request+chat%2Fnew+failed+with+message%3A+No+chat+model+found+in+server-provided+config%0A%09at+org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse%28RemoteEndpoint.java%3A209%29%0A%09at+org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume%28RemoteEndpoint.java%3A193%29%0A%09at+org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage%28StreamMessageProducer.java%3A194%29%0A%09at+org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen%28StreamMessageProducer.java%3A94%29%0A%09at+org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run%28ConcurrentMessageProcessor.java%3A113%29%0A%09at+java.base%2Fjava.util.concurrent.Executors%24RunnableAdapter.call%28Executors.java%3A539%29%0A%09at+java.base%2Fjava.util.concurrent.FutureTask.run%28FutureTask.java%3A264%29%0A%09at+java.base%2Fjava.util.concurrent.ThreadPoolExecutor.runWorker%28ThreadPoolExecutor.java%3A1136%29%0A%09at+java.base%2Fjava.util.concurrent.ThreadPoolExecutor%24Worker.run%28ThreadPoolExecutor.java%3A635%29%0A%09...+1+more%0A%0A%60%60%60%0AAdditional+info%3A+%60%60%60org.eclipse.lsp4j.jsonrpc.ResponseErrorException%3A+Request+chat%2Fnew+failed+with+message%3A+No+chat+model+found+in+server-provided+config%60%60%60&quot;&gt;create a support ticket&lt;/a&gt;.&lt;/div&gt;&lt;/html&gt;" />
+                    </message>
+                  </list>
+                </messages>
+                <updatedAt value="2024-07-02T01:37:13.024406" />
+              </chat>
+            </list>
+          </chats>
+        </AccountData>
+      </list>
+    </accountData>
+  </component>
+</project>
